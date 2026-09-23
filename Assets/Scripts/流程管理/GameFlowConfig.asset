@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 354c8ccfff194ff42b68832353402d5e, type: 3}
+  m_Name: GameFlowConfig
+  m_EditorClassIdentifier: 
+  introVideo: {fileID: 32900000, guid: 1a20e9bc50f29f94287592db3f3df7b1, type: 3}
+  introTargetScene: "\u5893\u5BA4\u573A\u666F"
+  jiguanVideoMappings:
+  - jiguanId: 1
+    description: "\u5E55\u95F4\u8F6C\u573A"
+    videoClip: {fileID: 32900000, guid: a3572e97562d42a47a8ed4b27a69652b, type: 3}
+    targetScene: "\u6751\u5E84\u573A\u666F"
+  - jiguanId: 2
+    description: "\u6536\u5C3E"
+    videoClip: {fileID: 32900000, guid: 49b1a83ef138f5e46b2f3519b2d60529, type: 3}
+    targetScene: 

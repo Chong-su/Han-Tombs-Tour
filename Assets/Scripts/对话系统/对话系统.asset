@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe86c478b7bb0b4e98d7daaed81b9d2, type: 3}
+  m_Name: "\u5BF9\u8BDD\u7CFB\u7EDF"
+  m_EditorClassIdentifier: 
+  allDialogueList:
+  - dialogueId: 1004
+    dialogueDatas:
+    - dialogueNum: 1
+      dialogueName: "\u6211"
+      dialogueContent: "\u4F60\u597D\uFF0C\u8BF7\u95EE\u8FD9\u662F\u54EA\u91CC\uFF1F\u521A\u521A\u662F\u60A8\u51FA\u624B\u642D\u6551\u4E86\u6211\uFF1F"
+      duihuaAudio: {fileID: 8300000, guid: 7c50af80b37b15b44968d7d21c4db27e, type: 3}
+      nextDialogueNum: 2
+    - dialogueNum: 2
+      dialogueName: "\u519C\u592B"
+      dialogueContent: "\u6B64\u5730\u4E43\u6C49\u51A2\u6751\u3002\u6211\u65B9\u624D\u5165\u5C71\u72E9\u730E\uFF0C\u95FB\u5F97\u5F02\u54CD\uFF0C\u5FAA\u58F0\u67E5\u770B\uFF0C\u4FBF\u89C1\u4F60\u5012\u5728\u6797\u4E2D\u3002"
+      duihuaAudio: {fileID: 8300000, guid: c5f8045c7e56dd14486b6b6309fb9ce7, type: 3}
+      nextDialogueNum: 3
+    - dialogueNum: 3
+      dialogueName: "\u6211"
+      dialogueContent: "\u591A\u8C22\u60A8\u7684\u76F8\u6551\uFF0C\u4E0D\u77E5\u5982\u4F55\u79BB\u5F00\u6B64\u5730\uFF1F"
+      duihuaAudio: {fileID: 8300000, guid: 25f13d60919655a47b63ce0915ea5743, type: 3}
+      nextDialogueNum: 4
+    - dialogueNum: 4
+      dialogueName: "\u519C\u592B"
+      dialogueContent: "\u79BB\u5F00\u6B64\u5730\uFF1F\u6211\u4EEC\u6751\u4E0E\u4E16\u9694\u7EDD\uFF0C\u4E45\u4E0D\u901A\u5916\u754C\u97F3\u8BAF\u3002"
+      duihuaAudio: {fileID: 8300000, guid: 32a84388d119ced4993e03a6731952b7, type: 3}
+      nextDialogueNum: 5
+    - dialogueNum: 5
+      dialogueName: "\u519C\u592B"
+      dialogueContent: "\u4E0D\u8FC7\u4F60\u53EF\u4EE5\u95EE\u4E00\u4E0B\u6751\u957F\uFF0C\u5176\u4EBA\u535A\u53E4\u901A\u4ECA\uFF0C\u5E38\u4E8E\u5D16\u8FB9\u7B49\u5019\u6709\u7F18\u4E4B\u4EBA\uFF0C\u5B9A\u80FD\u89E3\u4F60\u5FC3\u4E2D\u7591\u60D1\u3002"
+      duihuaAudio: {fileID: 8300000, guid: 12e3bc9cefaf15042a5a8bcf988de407, type: 3}
+      nextDialogueNum: 6
+    - dialogueNum: 6
+      dialogueName: "\u519C\u592B"
+      dialogueContent: "\u6CBF\u6B64\u8DEF\u884C\u8D70\uFF0C\u4FBF\u53EF\u5BFB\u5F97\u3002"
+      duihuaAudio: {fileID: 8300000, guid: a5868bc4bfa153b48ac278873d07a3c7, type: 3}
+      nextDialogueNum: 7
+    - dialogueNum: 8
+      dialogueName: "\u6211"
+      dialogueContent: "\u591A\u8C22\u60A8\u7684\u6307\u70B9\uFF0C\u611F\u6FC0\u4E0D\u5C3D\uFF01"
+      duihuaAudio: {fileID: 8300000, guid: 19d958ad6f6deed4d9cedd610df57147, type: 3}
+      nextDialogueNum: 9
+    - dialogueNum: 9
+      dialogueName: "\u519C\u592B"
+      dialogueContent: "\u54C8\u54C8\uFF01\u4F55\u8DB3\u6302\u9F7F\uFF01"
+      duihuaAudio: {fileID: 8300000, guid: acc3e2a5d86c6b14484936994502d9ed, type: 3}
+      nextDialogueNum: -1
+  - dialogueId: 1005
+    dialogueDatas:
+    - dialogueNum: 1
+      dialogueName: "\u767D\u53D1\u8001\u8005"
+      dialogueContent: "\u5C11\u5E74\uFF0C\u6C5D\u610F\u6B32\u79BB\u6B64\u5730\uFF0C\u662F\u4E5F\uFF1F"
+      duihuaAudio: {fileID: 8300000, guid: f05d6dafa789ccf4b8f0180a810a050b, type: 3}
+      nextDialogueNum: 2
+    - dialogueNum: 2
+      dialogueName: "\u6211"
+      dialogueContent: "\u60A8\u77E5\u6653\uFF1F\u600E\u4E48\u79BB\u5F00\u6B64\u5730\u5462\uFF1F"
+      duihuaAudio: {fileID: 8300000, guid: 69380c20215789f408421812c5580f91, type: 3}
+      nextDialogueNum: 3
+    - dialogueNum: 3
+      dialogueName: "\u767D\u53D1\u8001\u8005"
+      dialogueContent: "\u54C8\u54C8\uFF0C\u543E\u65E9\u77E5\u4E4B\uFF01\u7136\u6B32\u8131\u8EAB\uFF0C\u987B\u5148\u8FC7\u543E\u8003\u9A8C\uFF01"
+      duihuaAudio: {fileID: 8300000, guid: 6f9b9a92335104442a9039e4abfffbfc, type: 3}
+      nextDialogueNum: 4
+    - dialogueNum: 4
+      dialogueName: "\u6211"
+      dialogueContent: "\u8003\u9A8C\uFF1F"
+      duihuaAudio: {fileID: 8300000, guid: 007b504485fe8234fa81d486937ff903, type: 3}
+      nextDialogueNum: 5
+    - dialogueNum: 5
+      dialogueName: "\u767D\u53D1\u8001\u8005"
+      dialogueContent: "\u9996\u5173\u9700\u7B54\u543E\u4E94\u95EE\uFF0C\u65B9\u53EF\u901A\u884C\uFF0C\u6240\u95EE\u7686\u4E43\u6C5D\u4E00\u8DEF\u6240\u89C1\u6240\u95FB\u3002"
+      duihuaAudio: {fileID: 8300000, guid: e1912966b9784d0478ad8a1e0cf26e0e, type: 3}
+      nextDialogueNum: -1
+  - dialogueId: 1006
+    dialogueDatas:
+    - dialogueNum: 1
+      dialogueName: "\u767D\u53D1\u8001\u8005"
+      dialogueContent: "\u53EF\u559C\u53EF\u8D3A\uFF0C\u6C5D\u5DF2\u95EF\u8FC7\u9996\u5173\uFF0C\u8D60\u4E0E\u4F60\u4E00\u7247\u53E4\u7269\u788E\u7247\u3002"
+      duihuaAudio: {fileID: 8300000, guid: 237951caa999fe24da9b459ebb74efbe, type: 3}
+      nextDialogueNum: -1
+    - dialogueNum: 2
+      dialogueName: "\u767D\u53D1\u8001\u8005"
+      dialogueContent: "\u73B0\u4E43\u9700\u6500\u4E0A\u543E\u8EAB\u540E\u60AC\u5D16\uFF0C\u5BFB\u5F97\u7B2C\u4E09\u5757\u53E4\u7269\u6B8B\u7247\uFF0C\u5C06\u5176\u5408\u800C\u4E3A\u4E00\uFF0C\u767B\u9876\u4E4B\u540E\uFF0C\u65B9\u80FD\u8131\u8EAB\u79BB\u6B64\u3002"
+      duihuaAudio: {fileID: 8300000, guid: d27fd10029ba4a948b779c6292d89fca, type: 3}
+      nextDialogueNum: -1
+    - dialogueNum: 3
+      dialogueName: "\u6211"
+      dialogueContent: "\u591A\u8C22\u60A8\u7684\u6307\u6559\uFF01"
+      duihuaAudio: {fileID: 8300000, guid: ef5d15bf6558c4944bef6569d1c72228, type: 3}
+      nextDialogueNum: -1

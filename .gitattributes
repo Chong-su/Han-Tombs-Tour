@@ -1,0 +1,30 @@
+# 统一行尾处理，二进制文件不做文本转换与 diff
+* text=auto
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.psd binary
+*.tga binary
+*.dds binary
+*.exr binary
+*.tif binary
+*.tiff binary
+*.hdr binary
+*.fbx binary
+*.obj binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.mp4 binary
+*.mov binary
+*.unitypackage binary
+*.dll binary
+*.so binary
+*.a binary
+*.pdf binary
+*.ttf binary
+*.otf binary
+*.docx binary
+*.xlsx binary

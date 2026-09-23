@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - "\u9A6C\u8F66"
+  - WenWu
+  - JiGuan
+  - NongFu
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - "\u6A21\u578B"
+  - "\u89C2\u5BDF\u623F"
+  - player
+  - Volume
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Terrain
+  - EnvironmentSmall
+  - EnvironmentLarge
+  - ScatterTiny
+  - ScatterSmall
+  - UndergrowthSmall
+  - UndergrowthMedium
+  - UndergrowthLarge
+  - GroundScatter
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

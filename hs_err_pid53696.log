@@ -1,0 +1,222 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffad07280e3, pid=53696, tid=43244
+#
+# JRE version:  (11.0.14.1+1) (build )
+# Java VM: OpenJDK 64-Bit Server VM (11.0.14.1+1, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x1d80e3]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: 
+
+Host: Intel(R) Core(TM) Ultra 9 275HX, 24 cores, 31G,  Windows 11 , 64 bit Build 26100 (10.0.26100.8521)
+Time: Thu Jul  2 10:56:42 2026 中国标准时间 elapsed time: 0.007380 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000019353f8b800):  JavaThread "Unknown thread" [_thread_in_vm, id=43244, stack(0x00000088fff00000,0x0000008900000000)]
+
+Stack: [0x00000088fff00000,0x0000008900000000],  sp=0x00000088ffffea10,  free space=1018k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1d80e3]
+V  [jvm.dll+0x1d6213]
+V  [jvm.dll+0x35f45b]
+V  [jvm.dll+0x767aa0]
+V  [jvm.dll+0x3ccf1f]
+V  [jvm.dll+0x3cf2b1]
+C  [jli.dll+0x5207]
+C  [ucrtbase.dll+0x2cd30]
+C  [KERNEL32.DLL+0x2e957]
+C  [ntdll.dll+0x87c1c]
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x0000000000000000
+
+
+Registers:
+RAX=0x0000db388c659b04, RBX=0x0000000000000000, RCX=0x0000000000000000, RDX=0x00007ffc1c12cfe0
+RSP=0x00000088ffffea10, RBP=0x0000000000000000, RSI=0x0000019353f8b800, RDI=0x0000000000000000
+R8 =0x0000000000000000, R9 =0x0000000000000000, R10=0x0000000000000000, R11=0x0000000000000000
+R12=0x0000000000000000, R13=0x00007ffad0b18260, R14=0x0000019351ab5108, R15=0x00000088fffff758
+RIP=0x00007ffad07280e3, EFLAGS=0x0000000000010256
+
+Top of Stack: (sp=0x00000088ffffea10)
+0x00000088ffffea10:   0000019300001fff 0000019351acd990
+0x00000088ffffea20:   00000088fffff758 0000000000000400
+0x00000088ffffea30:   00006c829f77e6d7 0000000000000400
+0x00000088ffffea40:   00007ffc1c120000 00007ffad07260ba
+0x00000088ffffea50:   00007ffad0b18260 0000000000000000
+0x00000088ffffea60:   00007ffad0de8648 00007ffc1c120000
+0x00000088ffffea70:   0000000000000003 00007ffc44f233ec
+0x00000088ffffea80:   0000000000000000 00007ffad0b67db8
+0x00000088ffffea90:   0000000000000000 00007ffad0e4ee70
+0x00000088ffffeaa0:   0000008800000000 00007ffad07260ba
+0x00000088ffffeab0:   0000db388c659b04 00007ffad0de8648
+0x00000088ffffeac0:   00000088fffff758 00007ffad0b18260
+0x00000088ffffead0:   0000019353f8b800 00000088ffffebf0
+0x00000088ffffeae0:   0000000000000000 00007ffad0726213
+0x00000088ffffeaf0:   0000019351ab5108 00007ffc1c12cfe0
+0x00000088ffffeb00:   0000000000000000 0000000000000000 
+
+Instructions: (pc=0x00007ffad07280e3)
+0x00007ffad0727fe3:   f0 ff 15 b6 88 60 00 48 8b cb 41 b1 01 48 2b 8c
+0x00007ffad0727ff3:   24 90 00 00 00 45 33 c0 33 d2 c6 04 31 00 48 8b
+0x00007ffad0728003:   ce e8 b7 0b 00 00 42 80 3c 33 3b 4a 8d 3c 33 75
+0x00007ffad0728013:   1c 0f 1f 40 00 0f 1f 84 00 00 00 00 00 48 ff c3
+0x00007ffad0728023:   ff c5 42 80 3c 33 3b 4a 8d 3c 33 74 f0 49 83 3c
+0x00007ffad0728033:   24 00 74 18 48 8b 94 24 98 00 00 00 49 8b cf e8
+0x00007ffad0728043:   19 ae ee ff 49 8b cc e8 81 ad ee ff 48 8b 44 24
+0x00007ffad0728053:   20 48 8d 4c 24 30 49 89 47 18 48 8b 44 24 28 49
+0x00007ffad0728063:   89 47 20 4d 89 67 10 e8 a1 5d 0f 00 44 8b ed 48
+0x00007ffad0728073:   89 9c 24 90 00 00 00 48 3b 5c 24 38 0f 8c cd fe
+0x00007ffad0728083:   ff ff 4c 8b 7c 24 40 4c 8b 64 24 48 48 8b 7c 24
+0x00007ffad0728093:   50 48 8b 74 24 58 48 8b 9c 24 80 00 00 00 48 83
+0x00007ffad07280a3:   c4 60 41 5e 41 5d 5d c3 cc cc cc cc cc 40 53 55
+0x00007ffad07280b3:   56 41 55 48 81 ec b8 00 00 00 48 8b 05 84 ff 89
+0x00007ffad07280c3:   00 48 33 c4 48 89 84 24 a0 00 00 00 48 8b e9 48
+0x00007ffad07280d3:   c7 c3 ff ff ff ff 0f 1f 80 00 00 00 00 48 ff c3
+0x00007ffad07280e3:   80 3c 0b 00 75 f7 33 f6 c6 44 24 30 01 40 38 35
+0x00007ffad07280f3:   54 30 8d 00 74 17 40 38 35 31 96 8c 00 75 0e 33
+0x00007ffad0728103:   d2 48 8d 0d 65 03 6c 00 e8 c0 2c 1a 00 45 33 ed
+0x00007ffad0728113:   85 db 0f 8e 11 02 00 00 48 89 bc 24 e8 00 00 00
+0x00007ffad0728123:   48 8b fd 4c 89 a4 24 f0 00 00 00 48 63 c3 33 db
+0x00007ffad0728133:   4c 89 b4 24 f8 00 00 00 4c 89 bc 24 b0 00 00 00
+0x00007ffad0728143:   48 89 44 24 68 48 89 74 24 40 0f 1f 00 0f b6 07
+0x00007ffad0728153:   84 c0 74 12 3c 3b 74 0e 0f b6 44 2b 01 48 ff c3
+0x00007ffad0728163:   ff c6 84 c0 75 ee 48 8d 54 24 38 48 c7 44 24 38
+0x00007ffad0728173:   00 00 00 00 48 8d 4c 24 60 e8 0f 5c 0f 00 48 8b
+0x00007ffad0728183:   44 24 38 33 d2 4c 8b b0 78 02 00 00 49 8b 46 18
+0x00007ffad0728193:   4d 8b 66 10 48 89 44 24 50 49 8b 46 20 48 89 44
+0x00007ffad07281a3:   24 58 49 8b 46 28 48 89 44 24 48 8b c6 41 2b c5
+0x00007ffad07281b3:   48 63 f8 48 8d 4f 01 e8 71 3b 4a 00 49 63 d5 4c
+0x00007ffad07281c3:   8b c7 48 03 d5 48 8b c8 4c 8b f8 ff 15 cc 86 60
+0x00007ffad07281d3:   00 48 8b cb 48 2b 4c 24 40 80 7c 24 30 00 42 c6 
+
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x0000019351ab4c40, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000019353f8b800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=43244, stack(0x00000088fff00000,0x0000008900000000)]
+
+Threads with active compile tasks:
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+
+[error occurred during error reporting (printing compressed oops mode), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffad0cd58d7]
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (1 events):
+Event: 0.005 Loaded shared library D:\Unity\UnityEditor\2023.2.20f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\zip.dll
+
+
+Dynamic libraries:
+0x00007ff7741c0000 - 0x00007ff7741cd000 	D:\Unity\UnityEditor\2023.2.20f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\java.exe
+0x00007ffc47920000 - 0x00007ffc47b86000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffc47280000 - 0x00007ffc47349000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffc44e70000 - 0x00007ffc4526a000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffc45540000 - 0x00007ffc4568c000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffc3ee60000 - 0x00007ffc3ee77000 	D:\Unity\UnityEditor\2023.2.20f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\jli.dll
+0x00007ffc286d0000 - 0x00007ffc286e5000 	D:\Unity\UnityEditor\2023.2.20f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\VCRUNTIME140.dll
+0x00007ffc46c20000 - 0x00007ffc46de7000 	C:\Windows\System32\USER32.dll
+0x00007ffc44c60000 - 0x00007ffc44c87000 	C:\Windows\System32\win32u.dll
+0x00007ffc45740000 - 0x00007ffc4576b000 	C:\Windows\System32\GDI32.dll
+0x00007ffc26f20000 - 0x00007ffc271b2000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.8521_none_3e08b75ce33403b3\COMCTL32.dll
+0x00007ffc44c90000 - 0x00007ffc44dbb000 	C:\Windows\System32\gdi32full.dll
+0x00007ffc46990000 - 0x00007ffc46a39000 	C:\Windows\System32\msvcrt.dll
+0x00007ffc44bb0000 - 0x00007ffc44c53000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffc456f0000 - 0x00007ffc45722000 	C:\Windows\System32\IMM32.DLL
+0x00007ffc14430000 - 0x00007ffc144cb000 	D:\Unity\UnityEditor\2023.2.20f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\msvcp140.dll
+0x00007ffad0550000 - 0x00007ffad10d1000 	D:\Unity\UnityEditor\2023.2.20f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\server\jvm.dll
+0x00007ffc46b60000 - 0x00007ffc46c16000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffc47410000 - 0x00007ffc474ba000 	C:\Windows\System32\sechost.dll
+0x00007ffc46a40000 - 0x00007ffc46b58000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffc45dd0000 - 0x00007ffc45dd8000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffc1b020000 - 0x00007ffc1b02a000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffc45de0000 - 0x00007ffc45e60000 	C:\Windows\System32\WS2_32.dll
+0x00007ffc3bb20000 - 0x00007ffc3bb2b000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffc41180000 - 0x00007ffc411b6000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffc43900000 - 0x00007ffc4391b000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ffc2c060000 - 0x00007ffc2c070000 	D:\Unity\UnityEditor\2023.2.20f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\verify.dll
+0x00007ffc42170000 - 0x00007ffc423b2000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ffc45820000 - 0x00007ffc45ba3000 	C:\Windows\System32\combase.dll
+0x00007ffc46650000 - 0x00007ffc46729000 	C:\Windows\System32\OLEAUT32.dll
+0x00007ffc11960000 - 0x00007ffc1199b000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ffc44dc0000 - 0x00007ffc44e68000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffc1c120000 - 0x00007ffc1c148000 	D:\Unity\UnityEditor\2023.2.20f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\java.dll
+0x00007ffc29710000 - 0x00007ffc2971a000 	D:\Unity\UnityEditor\2023.2.20f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\jimage.dll
+0x00007ffc1c100000 - 0x00007ffc1c118000 	D:\Unity\UnityEditor\2023.2.20f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\zip.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;D:\Unity\UnityEditor\2023.2.20f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.8521_none_3e08b75ce33403b3;D:\Unity\UnityEditor\2023.2.20f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\server
+
+VM Arguments:
+java_command: <unknown>
+java_class_path (initial): <not set>
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     uint G1ConcRefinementThreads                  = 18                                        {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 527390592                                 {product} {ergonomic}
+   size_t MaxHeapSize                              = 8438249472                                {product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\Nsight Compute 2025.4.0;C:\Program Files\Common Files\Autodesk Shared;C:\Users\Chongsu\AppData\Local\Microsoft\WindowsApps;C:\Users\Chongsu\.dotnet\tools;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\platform-tools;C:\Program Files\dotnet\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Docker\Docker\resources\bin;D:\Git\cmd;C:\Users\Chongsu\AppData\Local\Microsoft\WindowsApps;D:\JZDSLx\llm_location;C:\Users\Chongsu\.dotnet\tools;C:\Users\Chongsu\AppData\Local\Programs\Tuanjie Cowork;C:\Users\Chongsu\AppData\Local\Programs\Tuanjie Cowork\cli\bin\win32-x64
+USERNAME=Chongsu
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 198 Stepping 2, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 11 , 64 bit Build 26100 (10.0.26100.8521)
+OS uptime: 0 days 2:10 hours
+
+CPU:total 24 (initial active 24) 
+
+Memory: 4k page, system-wide physical 32189M (13020M free)
+TotalPageFile size 69257M (AvailPageFile size 23872M)
+current process WorkingSet (physical memory assigned to process): 10M, peak: 10M
+current process commit charge ("private bytes"): 3M, peak: 3M
+
+vm_info: OpenJDK 64-Bit Server VM (11.0.14.1+1) for windows-amd64 JRE (11.0.14.1+1), built on Feb  9 2022 01:48:27 by "" with unknown MS VC++:1916
+
+END.

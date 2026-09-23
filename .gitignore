@@ -1,0 +1,77 @@
+# ============================================================
+# 《汉冢行》.gitignore
+# 原则：代码/场景/预制体/材质/自有模型/自有音频 全部入库；
+#       Unity 生成物、第三方素材包、大体积贴图与烘焙缓存 不入库。
+# 注意：被忽略的文件仍保留在本地磁盘，工程照常运行，只是不进版本库。
+# ============================================================
+
+# ---------- Unity / 团结引擎 生成物（必须忽略）----------
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]serSettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/[Ee]xportedObj/
+
+# ---------- IDE 生成物 ----------
+.vs/
+.idea/
+.vscode/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+sysinfo.txt
+crashlytics-build.properties
+
+# ---------- 打包产物 ----------
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# ---------- Codely CLI 工具状态（个人环境，不入库）----------
+/.codely/
+/.codely-cli/
+/screenshots/
+/mem-log/
+
+# ---------- 大体积素材：第三方素材包 / 官方示例（约 4.4GB）----------
+/Assets/TerrainSampleAssets/
+/Assets/Audio/
+/Assets/Foliage Free/
+/Assets/Art/UnityHDRI/
+/Assets/Art/Environment/_ExternalContent/
+/Assets/Art/Environment/Vegetation/
+
+# ---------- 大体积素材：按类型排除 ----------
+# 高清贴图与 HDRI（.tif/.tiff 约 3.7GB）
+*.tif
+*.tiff
+*.exr
+*.hdr
+# 视频（约 100MB）
+*.mp4
+*.mov
+*.avi
+# 第三方环境音 wav（约 500MB）；自有配音与背景音乐保留
+*.wav
+!/Assets/配音/**
+!/Assets/背景音乐/**
+
+# ---------- 系统文件 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
