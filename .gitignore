@@ -75,3 +75,6 @@ crashlytics-build.properties
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# ---------- 演示视频白名单（README 演示区引用，随仓库分发）----------
+!/docs/*.mp4
